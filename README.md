@@ -28,8 +28,9 @@ documented codebase makes it easier for developers to improve the code and contr
 
 
 Etherpad Lite is designed to be easily embeddable and provides a [HTTP API](https://github.com/ether/etherpad-lite/wiki/HTTP-API) 
-that allows your web application to manage pads, users and groups. It is recommended to use the client implementations available for this API, listed on [this wiki page](https://github.com/ether/etherpad-lite/wiki/HTTP-API-client-libraries).
-There is also a [jQuery plugin](https://github.com/johnyma22/etherpad-lite-jquery-plugin) that helps you to embed Pads into your website
+that allows your web application to manage pads, users and groups. It is recommended to use the [available client implementations](https://github.com/ether/etherpad-lite/wiki/HTTP-API-client-libraries) in order to interact with this API. There is also a [jQuery plugin](https://github.com/johnyma22/etherpad-lite-jquery-plugin) that helps you to embed Pads into your website.
+There's also a full-featured plugin framework, allowing you to easily add your own features.
+Finally, Etherpad Lite comes with translations into tons of different languages!
 
 **Visit [beta.etherpad.org](http://beta.etherpad.org) to test it live**
 
@@ -66,7 +67,7 @@ You'll need gzip, git, curl, libssl develop libraries, python and gcc.
 *For Debian/Ubuntu*: `apt-get install gzip git-core curl python libssl-dev pkg-config build-essential`  
 *For Fedora/CentOS*: `yum install gzip git-core curl python openssl-devel && yum groupinstall "Development Tools"`
 
-Additionally, you'll need [node.js](http://nodejs.org).
+Additionally, you'll need [node.js](http://nodejs.org) installed, Ideally the latest stable version, be careful of installing nodejs from apt.
 
 **As any user (we recommend creating a separate user called etherpad-lite):**
 
@@ -114,9 +115,9 @@ Join the [mailinglist](http://groups.google.com/group/etherpad-lite-dev) and mak
 
 # Modules created for this project
 
-* [ueberDB](https://github.com/ether/ueberDB) "transforms every database into a object key value store" - manages all database access
-* [channels](https://github.com/ether/channels) "Event channels in node.js" - ensures that ueberDB operations are atomic and in series for each key
-* [async-stacktrace](https://github.com/ether/async-stacktrace) "Improves node.js stacktraces and makes it easier to handle errors"
+* [ueberDB](https://github.com/Pita/ueberDB) "transforms every database into a object key value store" - manages all database access
+* [channels](https://github.com/Pita/channels) "Event channels in node.js" - ensures that ueberDB operations are atomic and in series for each key
+* [async-stacktrace](https://github.com/Pita/async-stacktrace) "Improves node.js stacktraces and makes it easier to handle errors"
 
 # Donate!
 * [Flattr] (http://flattr.com/thing/71378/Etherpad-Foundation)
